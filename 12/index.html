@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Fibonacci</title>
+</head>
+<body>
+
+<h2>Fibonacci</h2>
+
+<input type="number" id="numero">
+<button onclick="fibonacci()">Mostrar</button>
+
+<p id="resultado"></p>
+
+<script>
+function fibonacci() {
+    let numero = Number(document.getElementById("numero").value);
+
+    let a = 0;
+    let b = 1;
+    let texto = "0 1 ";
+
+    while (b <= numero) {
+        let proximo = a + b;
+        texto += proximo + " ";
+
+        a = b;
+        b = proximo;
+    }
+
+    resultado.innerHTML = texto;
+}
+</script>
+
+</body>
+</html>
