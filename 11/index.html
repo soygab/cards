@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Conversor</title>
+</head>
+<body>
+
+<h2>Conversor</h2>
+
+<input type="number" id="real">
+
+<button onclick="converter()">Converter</button>
+
+<p id="resultado"></p>
+
+<script>
+function converter() {
+    let real = Number(document.getElementById("real").value);
+
+    let dolar = real / 5.50;
+
+    resultado.innerHTML = "US$ " + dolar.toFixed(2);
+}
+</script>
+
+</body>
+</html>
