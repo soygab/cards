@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Números Pares</title>
+</head>
+<body>
+
+<h2>Números Pares</h2>
+
+<button onclick="mostrar()">Mostrar</button>
+
+<p id="resultado"></p>
+
+<script>
+function mostrar() {
+    let texto = "";
+
+    for (let i = 1; i <= 50; i++) {
+        if (i % 2 === 0) {
+            texto += i + " ";
+        }
+    }
+
+    resultado.innerHTML = texto;
+}
+</script>
+
+</body>
+</html>
