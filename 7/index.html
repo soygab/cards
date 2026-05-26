@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Média</title>
+</head>
+<body>
+
+<h2>Média</h2>
+
+<input type="number" id="n1">
+<input type="number" id="n2">
+<input type="number" id="n3">
+<input type="number" id="n4">
+<input type="number" id="n5">
+
+<button onclick="calcular()">Calcular</button>
+
+<p id="resultado"></p>
+
+<script>
+function calcular() {
+    let n1 = Number(document.getElementById("n1").value);
+    let n2 = Number(document.getElementById("n2").value);
+    let n3 = Number(document.getElementById("n3").value);
+    let n4 = Number(document.getElementById("n4").value);
+    let n5 = Number(document.getElementById("n5").value);
+
+    let media = (n1 + n2 + n3 + n4 + n5) / 5;
+
+    resultado.innerHTML = "Média: " + media;
+}
+</script>
+
+</body>
+</html>
