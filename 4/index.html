@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Notas</title>
+</head>
+<body>
+
+<h2>Sistema de Notas</h2>
+
+<input type="number" id="nota">
+<button onclick="verificar()">Verificar</button>
+
+<p id="resultado"></p>
+
+<script>
+function verificar() {
+    let nota = Number(document.getElementById("nota").value);
+
+    if (nota >= 7) {
+        resultado.innerHTML = "Aprovado";
+    } else if (nota >= 5) {
+        resultado.innerHTML = "Recuperação";
+    } else {
+        resultado.innerHTML = "Reprovado";
+    }
+}
+</script>
+
+</body>
+</html>
