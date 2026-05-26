@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Faixa Etária</title>
+</head>
+<body>
+
+<h2>Faixa Etária</h2>
+
+<input type="number" id="idade">
+<button onclick="verificar()">Verificar</button>
+
+<p id="resultado"></p>
+
+<script>
+function verificar() {
+    let idade = Number(document.getElementById("idade").value);
+
+    if (idade <= 12) {
+        resultado.innerHTML = "Criança";
+    } else if (idade <= 17) {
+        resultado.innerHTML = "Adolescente";
+    } else if (idade <= 59) {
+        resultado.innerHTML = "Adulto";
+    } else {
+        resultado.innerHTML = "Idoso";
+    }
+}
+</script>
+
+</body>
+</html>
